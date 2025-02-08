@@ -1,0 +1,128 @@
+body {
+  background-color: #1c1b1b;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  height: 60px;
+}
+nav ul img {
+  height: 38px;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+nav ul li:nth-child(2) {
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+nav ul li:nth-child(3) {
+  font-size: 14px;
+  margin-right: 8px;
+  color: rgb(199, 197, 197);
+}
+nav ul li:nth-child(4) {
+  font-size: 14px;
+  color: rgb(199, 197, 197);
+}
+.container {
+  min-height: 50vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 13px auto;
+  width: 70vw;
+  border-radius: 13px;
+  padding: 34px;
+  background-image: url(pexels-pixabay-162389.jpg);
+  background-size: cover;  /* Fills the container, might crop */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bottom {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  height: 80px;
+  bottom: 0;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 16px;
+}
+.bottom img {
+  filter: invert(1);
+  width: 40px;
+}
+#masterplay {
+  color: white;
+  fill: white; /* Ensures the inner part is also white */
+  margin-bottom: 3px;
+  width: 34px;
+}
+#myprogressbar {
+  width: 80vw;
+  text-align: center;
+  cursor: pointer;
+}
+.songitemcontainer {
+    margin-top: 50px;
+}
+.songitem {
+  height: 50px;
+  display: flex;
+  background-color: transparent;
+  /* width: 80%; */
+  color: white;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+.songitemimg {
+  width: 43px;
+  margin: 0 23px 0;
+  border-radius: 34px;
+}
+.timestamp {
+  display: flex;
+  align-items: center;
+  margin: 0 23px;
+  font-size: 20px;
+}
+.timestamp img {
+  cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    color: white;
+    left: 9.6vw;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.whitechutiyapa{
+  width: 17px;
+  margin-left: 4px;
+  filter: invert(1);
+  opacity: 0;
+}
+.songitem:hover{
+  background-color: gray;
+}
